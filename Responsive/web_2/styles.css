@@ -1,0 +1,193 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Josefin Slab";
+}
+
+img {
+    max-width: 100%;
+}
+
+#app {
+    padding: 1.25em;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: none; /*hide ul by default*/
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.food-list {
+    text-align: center;
+    margin: 15px 0;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-list > *{
+    margin-bottom: 10px;
+} 
+
+/* 
+.food-list img, .food-list h1, .food-list p {
+    margin-bottom: 10px;
+} */
+
+
+
+@media (min-width: 400px) and (max-width: 500px) {
+    #food-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .food-list {
+        width: calc(100%/2);
+        padding: 10px;
+    }
+} 
+
+@media (min-width: 1000px) {
+    header .fas, header #mail {
+        display: none;
+    }
+
+    header ul {
+        display: block;
+    }
+    
+    #food-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .food-list {
+        width: calc(100%/4);
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #app {
+        max-width: 1400px;
+    }
+}
+
+.pages p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#chef {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chef h2, #chef h3, #chef p {
+    margin: 20px 5px;
+    text-align: center;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#footer h1, #footer h3{
+    margin: 20px 10px;
+}
+
+
+
+
+.blog h2, .blog img {
+    display: inline-block;
+}
+
+.blog h1 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.blog h2 {
+    vertical-align: top;
+}
+
+
+
+.tags button {
+    width: 25%;
+    height: 15%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin: 20px 10px;
+   
+}
+
+@media (min-width:1000px) {
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #footer .fh {
+        height: 550px;
+        width: 33%;
+    }
+
+    #footer .blog {
+        margin: 20px ;
+        height: 550px;
+        width: 33%;
+    }
+
+    #footer .tags {
+        height: 550px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .blog img {
+        width: 30%;
+    }
+
+
+
+}
